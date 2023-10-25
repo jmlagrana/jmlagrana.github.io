@@ -18,7 +18,7 @@
         <a href="https://www.facebook.com/jmlagrana"><i class="fab fa-facebook"><span>Facebook</span></i></a>
         <a href="https://www.linkedin.com/in/john-michael-lagrana-109b78224/"><i
                 class="fab fa-linkedin"><span>Linkedin</span></i></a>
-        <a href="https://www.instagram.com/xjmllllx/"><i class="fab fa-instagram"><span>Instagram</span></i></a>
+        <a href="https://www.instagram.com/_mic0915/"><i class="fab fa-instagram"><span>Instagram</span></i></a>
         <a href="https://github.com/jmlagrana"><i class="fab fa-github"><span>GitHub</span></i></a>
     </div>
     </div>
@@ -26,12 +26,15 @@
     <div id="header">
         <div class="container">
             <nav>
-                <a href="https://edu.stacktrek.com/">
-                    <img src="images/StackTrekLogo.png" width="243" height="107" class="logo" />
-                </a>
+                <a href=""></a>
+                <!-- <a href="https://edu.stacktrek.com/">
+                    <img src="images/jmbwlogo.png" width="250" height="120" class="logo" />
+                </a> -->
                 <ul>
+                    <br>
                     <li><a href="#about">About me</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects-container">Projects</a></li>
+                    <li><a href="#certificates-container">Certificates</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -53,59 +56,62 @@
                     <h1 class="sub-title">about me.</h1>
                     <p>
                         <br>
-                        My name is John Michael L. Lagrana 23 years of age, I currently live in Salas Real Subdivision
-                        Tacas Jaro <br>
-                        the youngest of our sibling and an aspiring student from Central Philippine University who aims
-                        to broaden the scope
-                        of my knowledge with the help of this on the job training under the management of StackTrek.
+                        I'm John Michael Lagrana, a 24-year-old computer science graduate who's passionate about
+                        adventure, fitness, and gaming. I love exploring new places and activities, maintaining a
+                        healthy lifestyle through fitness, and immersing myself in the world of video games.
+                        Additionally, I'm excited about the new trends in technology and enthusiastic about exploring
+                        the latest innovations in the world. I'm a well-rounded individual who values the balance
+                        between the virtual and the real world, always open to connecting with like-minded individuals
+                        who share my interests.
                         <br>
                         <br>
                         <br>
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Stack Trek</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Educational background</p>
                         <p class="tab-links" onclick="opentab('contacts')">Contact me</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Current OJT Experience</span><br>
-                                <br> ➢ So far my on the job training in Stack Trek is phenomenal and excited for more
-                                coming activiies
-                                <br>in a span of shortime I have gain a lot of knowledge in this company I do believe
-                                that this bootcamp <br>
-                                will shape me into a great person in the field that I will be in the future.
+                            <li><span>StackTrek</span>
+                                <br>&ensp;• February 2023 - June 2023
+                            </li>
+                            <li><span>DOLE Government Internship Program</span>
+                                <br>&ensp;• August 2023 - December 2023
                             </li>
 
                         </ul>
                     </div>
                     <div class="tab-contents" id="contacts">
                         <ul>
-                            <li><span>Phone</span><br>➢ +63 921 477 1864</li>
-                            <li><span>E-mail</span><br>➢ jmlagranaoo@gmail.com<br>➢ johnmichael.lagrana-18@cpu.edu.ph
+                            <li><span>Phone</span><br>&ensp;• 0921 477 1864</li>
+                            <li><span>E-mail</span><br>&ensp;• jmlagranaoo@gmail.com<br>➢
+                                johnmichael.lagrana-18@cpu.edu.ph
                             </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>College</span><br>➢ Central Philippine University</li>
-                            <li><span>Senior High School</span><br>➢ Jaro National High School</li>
-                            <li><span>High School</span><br>➢ Jaro National High School</li>
-                            <li><span>Elementary</span><br>➢ Jaro 1 Elementary School</li>
-
+                            <li><span>College</span><br>&ensp;• Central Philippine University</li>
+                            <li><span>Senior High School</span><br>&ensp;• Jaro National High School</li>
+                            <li><span>High School</span><br>&ensp;• Jaro National High School</li>
+                            <li><span>Elementary</span><br>&ensp;• Jaro 1 Elementary School</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Projects -->
-    <div id="projects">
-        <div>
-            
-        </div>
+    <div id="projects-container">
+    
     </div>
+    <!-- Certificates -->
+    <div id="certificates-container">
+
+    </div>
+
 
     <!---Gallery-->
     <!-- <div id="gallery">
@@ -128,7 +134,6 @@
         </h1>
     </div> -->
     <script>
-
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -142,31 +147,72 @@
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab");
         }
-
-        /* here */
-
-        document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+        // Smoothscroll effect
+        document.querySelectorAll('a[href="#about"], a[href="#projects-container"], a[href="#certificates-container"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-        document.querySelector('a[href="#projects"]').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-
+        // string change
         var typed = new Typed(".input", {
-            strings: [ "John Michael", "John", "Michael","Mic", "JM",],
+            strings: ["John Michael", "John", "Michael", "Mic", "JM",],
             typeSpeed: 120,
             backSpeed: 80,
             loop: true
         });
-        
+
+        // Load ontent of another tab
+        function loadCertificatesContent() {
+            const certificatesContainer = document.getElementById("certificates-container");
+
+            // Create a new XMLHttpRequest object
+            const xhr = new XMLHttpRequest();
+
+            // Specify the file you want to load
+            xhr.open("GET", "certificates.html", true);
+
+            // Define what happens when the request is successful
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    certificatesContainer.innerHTML = xhr.responseText;
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        }
+        // Call the function to load the projects content
+        loadCertificatesContent();
+
+        function loadProjectsContent() {
+            const projectsContainer = document.getElementById("projects-container");
+
+            // Create a new XMLHttpRequest object
+            const xhr = new XMLHttpRequest();
+
+            // Specify the file you want to load
+            xhr.open("GET", "projects.html", true);
+
+            // Define what happens when the request is successful
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    projectsContainer.innerHTML = xhr.responseText;
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        }
+        // Call the function to load the projects content
+        loadProjectsContent();
+
     </script>
-    
+
+
+
 </body>
 
 </html>
