@@ -40,7 +40,11 @@
             <div class="header-text">
                 <h1>Hello, My name is <span class="input"></span><br /></h1>
                 <h4>
-                    - Bachelor of Science in Computer Science
+                    <i class="fas fa-phone-alt" style="color: #ffff66;"></i>&ensp;&ensp;0921 477 1864
+                    <br>
+                    <i class="fas fa-envelope" style="color: #ffff66;"></i>&ensp;&ensp;jmlagranaoo@gmail.com
+                    <br>
+                    <i class="fas fa-envelope" style="color: #ffff66;"></i>&ensp;&ensp;johnmichael.lagrana-18@cpu.edu.ph
                 </h4>
             </div>
         </div>
@@ -70,7 +74,7 @@
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Educational background</p>
-                        <p class="tab-links" onclick="opentab('contacts')">Contact me</p>
+                        <p class="tab-links" onclick="opentab('certs')">Certificates</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -83,12 +87,13 @@
 
                         </ul>
                     </div>
-                    <div class="tab-contents" id="contacts">
+                    <div class="tab-contents" id="certs">
                         <ul>
-                            <li><span>Phone</span><br>&ensp;• 0921 477 1864</li>
-                            <li><span>E-mail</span><br>&ensp;• jmlagranaoo@gmail.com<br>➢
-                                johnmichael.lagrana-18@cpu.edu.ph
-                            </li>
+                            <li><span>Cybersecurity Essentials</span><br>&ensp;• https://www.credly.com/badges/98daaa6c-c8ae-4c9b-968d-f21ee245020d/public_url</li>
+                            <!-- <li><span>E-mail</span>
+                                <br>&ensp;• jmlagranaoo@gmail.com
+                                <br>&ensp;•johnmichael.lagrana-18@cpu.edu.ph
+                            </li> -->
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -111,8 +116,6 @@
     <div id="certificates-container">
 
     </div>
-
-
     <!---Gallery-->
     <!-- <div id="gallery">
         <div class="imagecontainer">
@@ -159,8 +162,8 @@
         // string change
         var typed = new Typed(".input", {
             strings: ["John Michael", "John", "Michael", "Mic", "JM",],
-            typeSpeed: 120,
-            backSpeed: 80,
+            typeSpeed: 300,
+            backSpeed: 200,
             loop: true
         });
 
