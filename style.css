@@ -262,6 +262,17 @@ nav ul li a::after {
 #certs li{
     font-size:12px;
 }
+#ichiban img {
+    max-width: 45%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Auto adjust the height to maintain the aspect ratio */
+  display: inline;
+  vertical-align: middle;
+  margin: 0;
+  margin-left: 100px;
+  margin-top: 160px;
+  border-radius: 10px;
+  /* Remove any default margins *//* Auto adjust the height to maintain the aspect ratio */
+  }
 /*images*/
 /* #gallery{
     width: 100%;
