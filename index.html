@@ -34,17 +34,17 @@
                     <br>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#projects-container">Projects</a></li>
-                    <li><a href="#certificates-container">Certificates</a></li>
+                    <!-- <li><a href="#certificates-container">Certificates</a></li> -->
                 </ul>
             </nav>
             <div class="header-text">
                 <h1>Hello, My name is <span class="input"></span><br /></h1>
                 <h4>
-                    <i class="fas fa-phone-alt" style="color: #ffff66;"></i>&ensp;&ensp;0921 477 1864
+                    <i class="fas fa-phone-alt" style="color: #FFFFFF;"></i>&ensp;&ensp;0921 477 1864
                     <br>
-                    <i class="fas fa-envelope" style="color: #ffff66;"></i>&ensp;&ensp;jmlagranaoo@gmail.com
+                    <i class="fas fa-envelope" style="color: #FFFFFF;"></i>&ensp;&ensp;jmlagranaoo@gmail.com
                     <br>
-                    <i class="fas fa-envelope" style="color: #ffff66;"></i>&ensp;&ensp;johnmichael.lagrana-18@cpu.edu.ph
+                    <i class="fas fa-envelope" style="color: #FFFFFF;"></i>&ensp;&ensp;johnmichael.lagrana-18@cpu.edu.ph
                 </h4>
             </div>
         </div>
@@ -72,11 +72,11 @@
                         <br>
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Educational background</p>
                         <p class="tab-links" onclick="opentab('certs')">Certificates</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="experience">
                         <ul>
                             <li><span>StackTrek</span>
                                 <br>&ensp;• February 2023 - June 2023
@@ -87,13 +87,18 @@
 
                         </ul>
                     </div>
-                    <div class="tab-contents" id="certs">
+                    <div class="tab-contents" id="certs"> 
                         <ul>
-                            <li><span>Cybersecurity Essentials</span><br>&ensp;• https://www.credly.com/badges/98daaa6c-c8ae-4c9b-968d-f21ee245020d/public_url</li>
-                            <!-- <li><span>E-mail</span>
-                                <br>&ensp;• jmlagranaoo@gmail.com
-                                <br>&ensp;•johnmichael.lagrana-18@cpu.edu.ph
-                            </li> -->
+                            <li><span>Cybersecurity Essentials</span>   
+                                <br>• https://www.credly.com/badges/98daaa6c-c8ae-4c9b-968d-f21ee245020d/public_url
+                            </li>
+                            <li><span>IT Essentials</span>   
+                                <br>• https://www.credly.com/badges/772ca11d-ddb5-4966-8cbb-7ae89e27f03e/public_url
+                            </li>
+                            <li><span>Introduction to IoT</span>   
+                                <br>• https://www.credly.com/badges/d1f45505-c3b5-420a-a273-af0f94d968f3/public_url
+                            </li>
+                           
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -113,9 +118,9 @@
     
     </div>
     <!-- Certificates -->
-    <div id="certificates-container">
+    <!-- <div id="certificates-container">
 
-    </div>
+    </div> -->
     <!---Gallery-->
     <!-- <div id="gallery">
         <div class="imagecontainer">
@@ -168,27 +173,27 @@
         });
 
         // Load ontent of another tab
-        function loadCertificatesContent() {
-            const certificatesContainer = document.getElementById("certificates-container");
+        // function loadCertificatesContent() {
+        //     const certificatesContainer = document.getElementById("certificates-container");
 
-            // Create a new XMLHttpRequest object
-            const xhr = new XMLHttpRequest();
+        //     // Create a new XMLHttpRequest object
+        //     const xhr = new XMLHttpRequest();
 
-            // Specify the file you want to load
-            xhr.open("GET", "certificates.html", true);
+        //     // Specify the file you want to load
+        //     xhr.open("GET", "certificates.html", true);
 
-            // Define what happens when the request is successful
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    certificatesContainer.innerHTML = xhr.responseText;
-                }
-            };
+        //     // Define what happens when the request is successful
+        //     xhr.onload = function () {
+        //         if (xhr.status === 200) {
+        //             certificatesContainer.innerHTML = xhr.responseText;
+        //         }
+        //     };
 
-            // Send the request
-            xhr.send();
-        }
-        // Call the function to load the projects content
-        loadCertificatesContent();
+        //     // Send the request
+        //     xhr.send();
+        // }
+        // // Call the function to load the projects content
+        // loadCertificatesContent();
 
         function loadProjectsContent() {
             const projectsContainer = document.getElementById("projects-container");
