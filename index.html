@@ -87,18 +87,18 @@
 
                         </ul>
                     </div>
-                    <div class="tab-contents" id="certs"> 
+                    <div class="tab-contents" id="certs">
                         <ul>
-                            <li><span>Cybersecurity Essentials</span>   
+                            <li><span>Cybersecurity Essentials</span>
                                 <br>• https://www.credly.com/badges/98daaa6c-c8ae-4c9b-968d-f21ee245020d/public_url
                             </li>
-                            <li><span>IT Essentials</span>   
+                            <li><span>IT Essentials</span>
                                 <br>• https://www.credly.com/badges/772ca11d-ddb5-4966-8cbb-7ae89e27f03e/public_url
                             </li>
-                            <li><span>Introduction to IoT</span>   
+                            <li><span>Introduction to IoT</span>
                                 <br>• https://www.credly.com/badges/d1f45505-c3b5-420a-a273-af0f94d968f3/public_url
                             </li>
-                           
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -115,7 +115,7 @@
     </div>
     <!-- Projects -->
     <div id="projects-container">
-    
+
     </div>
     <!-- Certificates -->
     <!-- <div id="certificates-container">
@@ -216,7 +216,17 @@
         }
         // Call the function to load the projects content
         loadProjectsContent();
-        
+
+        //Image slider script for 
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 3000);
+
 
     </script>
 
