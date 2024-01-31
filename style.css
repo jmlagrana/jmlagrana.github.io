@@ -450,4 +450,15 @@ nav ul li a::after {
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: #d3d3d3;
 }
-      
+
+.projectDescription {
+    font-size: 60px;
+    font-weight: 600;
+    color: #FFFFFF; 
+  }
+  
+  .projectDescription p {
+    
+    margin-left: 70%;
+  }
+  
